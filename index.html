@@ -1,24 +1,29 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="styles.css">
-        <title>Example site</title>
-    </head>
-    <body>
-        <h1>Example Website</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ex lectus, dictum et quam nec, venenatis lacinia dolor. Quisque venenatis, augue nec porta sollicitudin, tortor quam feugiat urna, ullamcorper cursus tortor justo a nunc. Ut ac tortor dictum, feugiat turpis in, pulvinar ligula. Quisque dapibus purus in ex facilisis gravida. Nulla facilisi. Proin luctus maximus est, et semper libero placerat quis. Etiam sit amet sapien vitae mi placerat rutrum. Proin elit felis, vulputate vitae neque sit amet, molestie pellentesque quam. In vel tellus iaculis, rhoncus odio eu, accumsan nisi. Phasellus ullamcorper convallis sagittis. Maecenas suscipit lorem justo. Aliquam tincidunt vestibulum imperdiet. Nunc ac facilisis nulla. Mauris velit tellus, consectetur non lorem eu, lacinia facilisis nisl. Morbi vulputate ultricies tellus, eget malesuada nulla fermentum ut.
-        </p>
-        <p>
-            Duis facilisis ut ligula at vulputate. Nullam scelerisque magna neque, at consectetur enim porttitor at. Nunc imperdiet tempor venenatis. Aenean vitae maximus orci, eget semper justo. Quisque cursus faucibus blandit. Donec pellentesque ligula ut dapibus cursus. Curabitur varius arcu id euismod viverra. Nullam aliquam sapien in facilisis faucibus. Nam hendrerit volutpat sodales. Sed ultricies eros aliquam semper consequat. Cras ligula risus, volutpat eget odio in, sollicitudin rutrum nisi. Duis vehicula commodo sapien, nec condimentum urna elementum eget. Vestibulum quis arcu volutpat, egestas felis vitae, faucibus ex. In augue arcu, placerat et diam a, ultrices commodo lacus. Maecenas diam metus, condimentum ac ex at, ultricies tempus sem.
-        </p>
-        <p>
-            Vestibulum tempor a purus quis maximus. Proin ornare turpis felis, et volutpat arcu blandit et. Quisque feugiat elit justo, nec lacinia purus elementum ut. Praesent et mollis enim. Mauris et orci vel lorem sollicitudin commodo. Etiam purus mauris, porttitor at enim eget, suscipit faucibus est. Sed a mi eros.
-        </p>
-        <p>
-            Aliquam in commodo risus. Ut ante magna, tristique et velit sit amet, dignissim mattis massa. Pellentesque quis fringilla lacus. Mauris varius imperdiet ligula in molestie. Curabitur pretium est at tincidunt euismod. Curabitur venenatis eleifend sem, ac condimentum justo ultricies in. Praesent venenatis, metus eget facilisis posuere, sapien lorem porta erat, quis lobortis dui sem eu nunc. Morbi auctor arcu felis, et hendrerit tortor interdum eu. Phasellus eu sem id mauris dignissim vestibulum. Mauris consectetur eros non eros sagittis suscipit. Praesent nunc purus, congue pulvinar aliquam quis, iaculis at mauris. Nulla congue odio at quam mattis, ut pellentesque diam eleifend. Mauris sagittis consequat finibus.
-        </p>
-        <p>
-            Quisque vitae ex posuere, vulputate sapien eget, dignissim risus. Integer lacus enim, pharetra at augue quis, auctor porta nulla. Etiam eget tristique purus. Donec consequat lacus lacus, nec gravida augue sodales nec. Fusce at urna lacus. Mauris sed felis tincidunt, bibendum urna id, dignissim nisl. Sed dapibus id urna ac convallis. Morbi gravida, ligula nec interdum dapibus, nibh erat consequat lectus, tempus bibendum lorem magna eget odio. Suspendisse sed maximus lectus. Duis tristique hendrerit tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nullam eu pellentesque est.
-        </p>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1">
+		<title>Login</title>
+        <!-- the form awesome library is used to add icons to our form -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <!-- include the stylesheet file -->
+        <link href="/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="login">
+			<h1>Login</h1>
+			<form action="/auth" method="post">
+				<label for="username">
+					<!-- font awesome icon -->
+					<i class="fas fa-user"></i>
+				</label>
+				<input type="text" name="username" placeholder="Username" id="username" required>
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+			</form>
+		</div>
+	</body>
 </html>
